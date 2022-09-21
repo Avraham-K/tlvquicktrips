@@ -1,0 +1,11 @@
+.selectDatesContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dayButton{
+    width: 8rem;
+    height: 12rem;
+    margin: 2rem 1rem;
+   
+}

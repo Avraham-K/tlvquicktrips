@@ -1,19 +1,20 @@
+import "./Homepage.css";
 import WelcomeText from "../../Components/WelcomeText/WelcomeText";
 import SelectDates from "../../Components/SelectDates/SelectDates";
 import FlightFilter from "../../Components/FlightFilter/FlightFilter";
 
 export default function Homepage() {
   return (
-    <>
-      <header className="App-header">This is the head of the page</header>
+    <div className="globalContainer">
+      <header className="headerContainer">This is the head of the page</header>
 
-      <body>
+      <body className="bodyContainer">
         <WelcomeText />
         <SelectDates />
         <FlightFilter />
       </body>
 
-      <footer className="App-footer">This site was created by me.</footer>
-    </>
+      <footer className="footerContainer">This site was created by me.</footer>
+    </div>
   );
 }

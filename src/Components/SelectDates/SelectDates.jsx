@@ -1,3 +1,4 @@
+import "./SelectDates.css";
 import { Button } from "react-bootstrap";
 
 
@@ -6,13 +7,13 @@ export default function SelectDates() {
 
     
   return (
-    <div>
-      <Button>Wednesday</Button>
-      <Button>Thursday</Button>
-      <Button>Friday</Button>
-      <Button>Saturday</Button>
-      <Button>Sunday</Button>
-      <Button>Monday</Button>
+    <div className="selectDatesContainer">
+      <Button className="dayButton">Wednesday</Button>
+      <Button className="dayButton">Thursday</Button>
+      <Button className="dayButton" variant="success">Friday</Button>
+      <Button className="dayButton" variant="success">Saturday</Button>
+      <Button className="dayButton">Sunday</Button>
+      <Button className="dayButton">Monday</Button>
     </div>
   )
 }
