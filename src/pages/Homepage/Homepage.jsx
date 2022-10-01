@@ -8,11 +8,11 @@ export default function Homepage() {
     <div className="globalContainer">
       <header className="headerContainer">This is the head of the page</header>
 
-      <body className="bodyContainer">
+      <div className="bodyContainer">
         <WelcomeText />
         <SelectDates />
         <FlightFilter />
-      </body>
+      </div>
 
       <footer className="footerContainer">This site was created by me.</footer>
     </div>

@@ -1,19 +1,23 @@
 import React, { useState } from "react";
-import DataContext from "../Context/DataContext"
+import dataContext from "../Context/dataContext"
 
 export default function DataContextProvider(props) {
 
     const {children} = props;
-    const [data, setData] = useState(null); 
+    const [data, setData] = useState({}); 
 
-  
+    const updateUserData = (data) => {
+      setData(data);
+    }
+
     return (
-      <DataContext.Provider
+      <dataContext.Provider
         value={{
-         
+          data,
+          updateUserData
         }}
       >
         {children}
-      </DataContext.Provider>
+      </dataContext.Provider>
     );
   }
